@@ -1,0 +1,271 @@
+/*COMPANY PROFILE WEBSITE
+AUTHOR : ARIEFUL19
+JOB : FRONT-END DEVELOPMENT
+CREATE : 27 JANUARY 2017*/*/
+
+/*COMPANY STRUCTUR*/
+
+/*1. GLOBAL STYLE
+2. NAVIGATION STYLE
+3. BANNER STYLE
+4. ABOUT STYLE
+5. TIMELINE STYLE
+6. PORTFOLIO STYLE
+7. VIDEO STYLE
+8. TEAM STYLE
+9. PRICING STYLE
+10. CONTACT STYLE*/
+
+/*==========	===========
+	  GLOBAL STYLE
+==========  ===========*/
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #000;
+}
+
+h1 {
+	font-size: 3.5em;
+	margin: 0.67em 0;
+	letter-spacing: 1px;
+}
+
+h2 {
+	font-size: 3em;
+	margin: 0.57em 0;
+	letter-spacing: 1px;
+}
+
+h3 {
+	font-size: 2.5em;
+	margin: 0.47em 0;
+	letter-spacing: 1px;
+}
+
+h4 {
+	font-size: 2em;
+	margin: 0.37em 0;
+	letter-spacing: 1px;
+}
+
+h5 {
+	font-size: 1.5em;
+	margin: 0.27em 0;
+	letter-spacing: 1px;
+}
+
+h6 {
+	font-size: 1em;
+	margin: 0.17em 0;
+	letter-spacing: 1px;
+}
+
+img {
+    max-width: 100%;
+    height: auto
+}
+
+a {
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    color: #222222;
+    font-family: 'Roboto', sans-serif;
+}
+
+a:hover {
+    color: #FF5E00;
+    text-decoration: none;
+}
+
+a:active,
+a:hover {
+    outline: 0 none;
+    text-decoration: none;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul,
+ol,
+li {
+    list-style: outside none none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+ul > li > a {
+    color: #222222;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.bold {
+    position: relative;
+    display: inline-block;
+    color: #30bced;
+    font-weight: 900;
+
+}
+
+.heading-left {
+    position: relative;
+    float: left;
+}
+
+.heading-left h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: 0px;
+    color: #1a1a1a;
+    text-transform: uppercase;
+}
+
+.heading-left h5 {
+    font-size: 14px;
+    font-family: 'Roboto', serif;
+    font-weight: 400;
+}
+
+.separator_left {
+    width: 85px;
+    height: 2px;
+    margin: 20px 0px;
+    background: #000;
+}
+
+/*navigation*/
+
+.navbar-default {
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0;
+    width: 100%;
+    padding: 20px 0;
+    background: transparent;
+    z-index: 999;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: #00a8ff !important;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:focus {
+    color: #30bced !important;
+    background-color: transparent;
+}
+
+.navbar-brand .icofont {
+    position: relative;
+    color: #30bced;
+    font-size: 20px;
+    padding-right: 5px;
+}
+
+.navbar-default .navbar-brand {
+    color: #fff;
+    font-weight: 800;
+}
+/*.navbar-brand i,
+.navbar-brand .bold {
+    width: 150px;
+    margin-left: 10px;
+}*/
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form { border-color: #fff }
+.menu-top li a {
+    color: #fff !important;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.menu-top li a:hover { color: #ff5f83!important }
+@media only screen and (max-width:768px) { 
+    .navbar-default .navbar-nav > li > a {
+        margin-top: 10px;
+        padding: 8px;
+    }
+}
+
+@media only screen and (max-width:480px) { 
+    .menu-top { background-color: #fff }
+    .navbar-default .navbar-nav > li > a { color: #313131  !important }
+}
+
+.navbar-default.menu-show {
+background:rgba(255, 255, 255, 0.9) none repeat scroll 0 0;
+padding: 10px 0;
+width: 100%;
+ margin-top:0px
+}
+
+@media only screen and (max-width:480px) { 
+    .menu-top {
+        color: #fff !important;
+        margin-left: 0px;
+    }
+}
+
+.navbar-default.menu-show li a {color: rgba(0, 0, 0, 0.6) !important; }
+.navbar-default.menu-show li a:hover { color: #ff5f83 !important }
+.navbar-default .navbar-toggle { background: #fff none repeat scroll 0 0 }
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus { background-color: #fff }
+.navbar-default .navbar-toggle .icon-bar { background-color: #ff5f83 }
+
+/*home-banner*/
+
+.home {
+    position: relative;
+    background-image: url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 15em;
+    min-height: 673px;
+}
+
+.home::after {
+    position: absolute;
+    overflow: hidden;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 333;
+}
+
+.home .home-banner {
+    z-index: 333;
+}
+.home .home-banner-content h1 {
+    font-size: 30px;
+    color: #fff;
+    z-index: -1;
+}
