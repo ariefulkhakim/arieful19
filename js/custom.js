@@ -22,7 +22,9 @@
 	if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
 		$(this).collapse('hide');
 	}
-	});				
+	});	
+
+				
 
 
 

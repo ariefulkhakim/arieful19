@@ -21,7 +21,7 @@ CREATE : 27 JANUARY 2017*/*/
 ==========  ===========*/
 
 body {
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	color: #000;
 }
 
@@ -71,7 +71,6 @@ a {
     transition: all 0.3s ease 0s;
     text-decoration: none;
     color: #222222;
-    font-family: 'Roboto', sans-serif;
 }
 
 a:hover {
@@ -94,14 +93,14 @@ ul,
 ol,
 li {
     list-style: outside none none;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 14px;
 }
 
 ul > li > a {
     color: #222222;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 14px;
     font-weight: 500;
     text-transform: uppercase;
@@ -112,32 +111,80 @@ ul > li > a {
 .bold {
     position: relative;
     display: inline-block;
+    font-family: 'Poppins', sans-serif;
     color: #30bced;
     font-weight: 900;
-
 }
 
-.heading-left {
+.blue {
     position: relative;
-    float: left;
+    color: #30bced;
 }
 
-.heading-left h2 {
-    font-family: 'Roboto', sans-serif;
+.banner-btn {
+    position: relative;
+    font-family: 'Poppins' , sans-serif;
+    background-color: #30bced;
+    border:1px solid transparent;
+    border-radius: 50px;
+    color: #fff;
     font-weight: 600;
-    font-size: 22px;
+    letter-spacing: 2px;
+    font-size: 14px;
+    padding: 10px 35px;
+    text-transform: uppercase;
+}
+
+.banner-btn:hover {
+    color: #fff;
+    background-color: transparent;
+    border-color: #30bced;
+    transition: 1s ease-in-out 0s;
+}
+
+.about-btn {
+    position: relative;
+    font-family: 'Poppins' , sans-serif;
+    background-color: #30bced;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    color: #fff;
+    width: 100%;
+    padding: 10px 30px;
+    text-transform: uppercase;
+}
+
+.about-btn:hover {
+    color: #000;
+    background-color: transparent;
+    border-color: #30bced;
+    transition: 0.5s ease-in-out 0s;
+}
+
+.heading {
+    position: relative;
+    text-align: center;
+}
+
+.heading h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
     letter-spacing: 0px;
     color: #1a1a1a;
     text-transform: uppercase;
 }
 
-.heading-left h5 {
+.heading h5 {
     font-size: 14px;
-    font-family: 'Roboto', serif;
+    font-family: 'Poppins', serif;
     font-weight: 400;
+    line-height: 23px;
+    width: 80%;
+    margin-left: 8em;
 }
 
-.separator_left {
+.separator {
     width: 85px;
     height: 2px;
     margin: 20px 0px;
@@ -199,6 +246,7 @@ ul > li > a {
     font-size: 12px;
     letter-spacing: 2px;
     text-transform: uppercase;
+    padding-top: 20px;
 }
 
 .menu-top li a:hover { color: #ff5f83!important }
@@ -239,33 +287,305 @@ width: 100%;
 
 .home {
     position: relative;
+    background-image: url(../img/banner2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 17em;
+    min-height: 673px;
+    background-blend-mode: overlay;
+    background-color: #333;
+}
+
+.home-banner {
+    position: relative;
+    text-align: center;
+}
+
+.home-banner-content h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 1.5px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.home-banner-content h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0px 0px 40px 0px;
+}
+
+/*about us*/
+
+.about {
+    position: relative;
+    padding: 80px 0px;
+}
+
+.about img {
+    max-width: 100%;
+}
+
+.about-left {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.about-right {
+    position: relative;
+    margin-top: 60px;
+    text-align: left;
+}
+
+.about ul.icon-profile {
+    position: relative;
+    background-color: #30bced;
+    padding-bottom: 20px;
+}
+
+.about ul.icon-profile li {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 5px;
+    margin-top: 20px;
+    border:1px solid #fff;
+    width: 50px;
+}
+
+.about ul.icon-profile .fa {
+    color: #fff;
+    font-size: 18px;
+}
+
+.about .about-content h2 {
+    font-family: 'Poppins' , sans-serif;
+    font-size: 25px;
+    color: #333;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.about .about-content p {
+    font-family: 'Poppins' , sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+}
+
+/*other*/
+
+.other {
+    position: relative;
+    background-color: #f9f9f9;
+    padding: 80px 0px 40px 0px;
+}
+
+.other .title-other h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #000;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.other .other-left {
+    background: #fff;
+    padding: 30px 30px;
+    margin-bottom: 20px;
+}
+
+.other .other-left h2 {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+    margin-top: 0;
+}
+
+.other .other-left span.other-date {
+    float: right;
+    margin-top: -30px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    background: #30bced;
+    padding: 5px 10px;
+}
+
+.other .other-left h3 {
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 300;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.other .other-left p {
+    font-size: 15px;
+    font-weight: 300;
+    color: #333;
+    letter-spacing: 1px;
+}
+
+.skill-item {
+    position: relative;
+    margin-top: 12px;
+    margin-bottom: 30px;
+    background: #000;
+    border-radius: 10px;
+}
+
+.skill-item-progress {
+    position: relative;
+    width: 100%;
+    height: 5px;
+    background: #30bced;
+    border-radius: 10px;
+}
+
+.skill-item-progress:after {
+    background: none;
+    box-shadow: 0 0 0 5px;
+    opacity: 0.3;
+}
+
+.skill .progress-title {
+    font-family: 'Poppins' , sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 17px;
+}
+
+.skill-item .counter {
+    position: absolute;
+    display: block;
+    font-size: 15px;
+    text-align: center;
+    width: 46px;
+    height: 24px;
+    line-height: 24px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 15px;
+    color: #fff;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-transform: translate(50%, -100%);
+       -moz-transform: translate(50%, -100%);
+        -ms-transform: translate(50%, -100%);
+         -o-transform: translate(50%, -100%);
+            transform: translate(50%, -100%);
+}
+
+.skill-item .counter {
+    color: #000;
+}
+
+/*service*/
+
+.service {
+    position: relative;
+    padding: 80px 0px;
+}
+
+.service .service-item {
+    background: none repeat scroll 0 0 #f5f5f5;
+    color: #777;
+    font-weight: 100;
+    margin: 30px 0 0;
+    padding: 40px 20px;
+    position: relative;
+    text-align: center;
+    transition: background-color 0.27s cubic-bezier(0, 0, 0.58, 1) 0s;
+    -webkit-transition: background-color 0.27s cubic-bezier(0, 0, 0.58, 1) 0s;
+}
+
+.service .service-item:hover {
+    background-color: #30bced;
+    color: #fff;
+}
+
+.service .service-item .service-icon {
+    font-size: 5em;
+    margin-bottom: 0px;
+    text-align: center;
+    color: #292c34;
+}
+
+.service .service-item:hover .service-icon {
+    color: #fff;
+}
+
+.service .service-item:hover .service-content h3 {
+    color: #fff;
+}
+
+.service .service-item:hover .service-content p {
+    color: #fff;
+}
+
+.service .service-item h3 {
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+    font-family: 'Poppins' , sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+}
+
+.service .service-item p {
+    font-size: 15px;
+    color: #333;
+    line-height: 24px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+/*counter*/
+
+.counter {
+    position: relative;
     background-image: url(../img/banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding-top: 15em;
-    min-height: 673px;
+    background-blend-mode: overlay;
+    background-color: #333;
+    min-height: 350px;
 }
 
-.home::after {
-    position: absolute;
-    overflow: hidden;
-    content: "";
-    background-color: rgba(0, 0, 0, 0.6);
-    height: 100%;
-    width: 100%;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 333;
+.counter .counter-list li:first-child {
+    margin: 0;
+}
+.counter .counter-list li {
+    z-index: 1;
+    float: left;
+    width: 188px;
+    margin: 0 0 0 139px;
+    background: #2b2b2b;
+    position: relative;
+    padding: 27px 10px 19px;
 }
 
-.home .home-banner {
-    z-index: 333;
-}
-.home .home-banner-content h1 {
-    font-size: 30px;
+.counter .counter-list .counter-icon {
+    font-size: 60px;
+    line-height: 70px;
     color: #fff;
-    z-index: -1;
+    margin: 0 auto 22px;
+    display: block;
 }
+
