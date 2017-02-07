@@ -89,6 +89,11 @@ ul {
     padding: 0px;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 ul,
 ol,
 li {
@@ -287,7 +292,7 @@ width: 100%;
 
 .home {
     position: relative;
-    background-image: url(../img/banner2.jpg);
+    background-image: url(../img/banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -557,7 +562,7 @@ width: 100%;
 
 /*counter*/
 
-.counter {
+.timeline {
     position: relative;
     background-image: url(../img/banner.jpg);
     background-repeat: no-repeat;
@@ -565,27 +570,305 @@ width: 100%;
     background-position: center;
     background-blend-mode: overlay;
     background-color: #333;
-    min-height: 350px;
+    padding: 80px 0px;
 }
 
-.counter .counter-list li:first-child {
-    margin: 0;
+.timeline .timeline-list {
+    margin: 0px 24px;
 }
-.counter .counter-list li {
+
+.timeline .timeline-list li {
     z-index: 1;
-    float: left;
-    width: 188px;
-    margin: 0 0 0 139px;
+    margin: 0px 30px;
     background: #2b2b2b;
     position: relative;
-    padding: 27px 10px 19px;
+    padding: 20px 40px;
+    display: inline-block;
 }
 
-.counter .counter-list .counter-icon {
+.timeline .timeline-list .timeline-icon {
     font-size: 60px;
     line-height: 70px;
     color: #fff;
-    margin: 0 auto 22px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.timeline .timeline-list .timeline-count {
+    font-size: 57px;
+    line-height: 34px;
+    font-weight: 700;
+    display: block;
+    margin: 0 0 20px;
+    letter-spacing: 2px;
+    color: #30bced;
+}
+
+.timeline .timeline-list .sub-title {
+    display: block;
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.timeline .timeline-list li::after {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    z-index: -1;
+    position: absolute;
+    border: 3px solid #2b2b2b;
+    transition: all 0.50s linear;
+    -webkit-transition: all 0.25s linear;
+}
+
+.timeline .timeline-list li:hover::after {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+
+/*portfolio*/
+
+.portfolio {
+    position: relative;
+    background-color: #f9f9f9;
+    padding: 80px 0px 0px 0px;
+}
+
+.portfolio .portfolio-list {
+    padding: 46px 0 50px;
+}
+
+.portfolio .portfolio-list ul {
+    text-align: center;
+}
+
+.portfolio .portfolio-list ul li.active {
+    color: #fff;
+    background-color: #30bced;
+}
+
+.portfolio .portfolio-list ul li {
+    display: inline;
+}
+
+.portfolio .portfolio-list ul li {
+    display: inline-block;
+    padding: 8px 14px 9px;
+    text-transform: uppercase;
+    color: #333;
+    font-weight: 600;
+    transition: .5s;
+    -webkit-transition: .5s;
+    line-height: 21px;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.portfolio .portfolio-list ul li:hover {
+    color: #fff;
+    background-color: #30bced;
+}
+
+.portfolio .portfolio-wrapper {
+    overflow: hidden;
+}
+
+.portfolio .single-portfolio {
+    position: relative;
+}
+
+.portfolio .portfolio-img {
+    position: relative;
+}
+
+.portfolio .portfolio-img img {
+    width: 100%;
     display: block;
 }
 
+.portfolio .portfolio-img:before {
+    position: absolute;
+    content: "";
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    top: 10px;
+    background: #666;
+    background: rgba(0, 0, 4, 0.5) none repeat scroll 0 0;
+    border: 1px solid #fff;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transition: .5s;
+    transition: .5s;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+.portfolio .single-portfolio:hover .portfolio-img:before {
+    content: "";
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.portfolio .portfolio-content {
+    bottom: 10px;
+    left: 10px;
+    margin-top: -20px;
+    position: absolute;
+    right: 10px;
+    text-align: center;
+    top: 50%;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transition: .8s;
+    transition: .8s;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+.portfolio .portfolio-content h3 {
+    margin: 0;
+    text-transform: uppercase;
+    color: #30bced;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.portfolio .portfolio-content a {
+    margin: 0px;
+    color: #30bced;
+}
+.prot_content a i {} .single-portfolio:hover .portfolio-content {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.portfolio .portfolio-wrapper .col-md-3 {
+    padding: 0;
+}
+
+/*testimonial*/
+
+.testimonial {
+    background: rgba(0, 0, 0, 0) url("../img/banner3.jpg") repeat scroll 0 0 / cover;
+    position: relative;
+    z-index: 1;
+    background-attachment: fixed;
+    padding: 5em 0;
+}
+
+.testimonial::after {
+    background: #000 none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.testimonial-content {
+    margin-top: 30px;
+}
+
+.testimonial-section-inner {
+    display: block;
+    vertical-align: middle;
+}
+
+.testimonial-content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.testimonial-author {
+    margin-bottom: 20px;
+}
+
+.testimonial-author img {
+    border: 3px solid #30bced;
+    border-radius: 50%;
+    height: auto;
+    width: 100px;
+}
+
+.single-testimonial p {
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0px;
+    padding-bottom: 20px;
+    text-transform: none;
+}
+
+.single-testimonial > h5 {
+    color: #fff;
+    margin-top: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+}
+
+.single-testimonial h6 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.testimonial-list .owl-pagination {
+    margin-top: 10px;
+}
+
+.owl-carousel .owl-page {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    /*IE7 life-saver */
+    
+    ;
+}
+.owl-carousel .owl-controls {
+    text-align: center;
+}
+
+.owl-carousel .owl-page span {
+    display: block;
+    background: #fff;
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    filter: Alpha(Opacity=50);
+    opacity: 0.5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    border-radius: 20px;
+    color: #fff;
+}
+
+.owl-carousel .owl-page.active span,
+.owl-controls.clickable .owl-page:hover span {
+    background: #30bced;
+    filter: Alpha(Opacity=100);
+    /*IE7 fix*/
+    
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}

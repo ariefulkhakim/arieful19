@@ -1,4 +1,4 @@
-
+			
 (function ($) {
  "use strict";
  	// ==========Navigation==========
@@ -22,15 +22,27 @@
 	if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
 		$(this).collapse('hide');
 	}
-	});	
+	});
 
-				
+	// mixitup	
+	$('.portfolio-wrapper').mixItUp();
 
+	// owlCarousel
+	$(".testimonial-content").owlCarousel({
+            items: 1,
+            autoPlay: true,
+            navigation: false,
+            theme: "tp-round-button",
+            itemsDesktop: [1199, 1],
+            itemsDesktopSmall: [980, 1],
+            itemsTablet: [768, 1],
+            itemsTabletSmall: false,
+            itemsMobile: [479, 1],
+            autoHeight: true,
+            pagination: true,
+        });
 
-
-	
 	new WOW().init();	
 	
 })(jQuery);    
-
 
