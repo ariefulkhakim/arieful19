@@ -166,6 +166,24 @@ ul > li > a {
     transition: 0.5s ease-in-out 0s;
 }
 
+.btn-send {
+    position: relative;
+    border: 1px solid transparent;
+    background-color: #e0e0e0;
+    border-radius: 0px;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0px;
+    padding: 10px 20px;
+}
+
+.btn-send:hover {
+    color: #fff;
+    background-color: #30bced;
+    border-color: #30bced;
+    transition: 0.5s ease-in-out 0s;
+}
+
 .heading {
     position: relative;
     text-align: center;
@@ -871,4 +889,105 @@ width: 100%;
     
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+/*contact*/
+
+.contact {
+    position: relative;
+    padding: 80px 0px 50px 0px;
+    background-color: #fff;
+}
+
+.contact .contact-content {
+    position: relative;
+    padding-top: 4em;
+}
+
+.contact textarea {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #e8e8e9;
+    border-radius: 0px;
+    box-shadow: none;
+    color: #333;
+    padding: 10px;
+    width: 100%;
+    font-size: 14px;
+}
+
+.contact textarea:focus {
+    border: 1px solid #30bced;
+    box-shadow: none;
+    outline: 0 none;
+}
+
+.contact input {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #e8e8e9;
+    border-radius: 0;
+    box-shadow: none;
+    color: #333;
+    font-size: 14px;
+    height: 50px;
+    padding: 10px;
+    width: 100%;
+}
+
+.contact input:focus {
+    border: 1px solid #30bced;
+    box-shadow: none;
+    outline: 0 none;
+}
+
+#map {
+        height: 270px;
+        width: 100%;
+}
+
+/*footer*/
+
+.footer {
+    position: relative;
+    background: #010101 none repeat scroll 0 0;
+    padding: 80px 0px 50px 0px; 
+}
+
+.footer ul.footer-content li {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    padding: 8px 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border:1px solid rgba(255, 255, 255, 0.48);
+    width: 50px;
+    color: #fff;
+}
+
+.footer ul.footer-content .fa {
+    color: #fff;
+    font-size: 15px;
+}
+
+.footer ul.footer-content li:hover {
+    background-color: #30bced;
+    color: #fff;
+    border-color: #30bced;
+    -webkit-transition: all 0.8s ease-in-out 0s;
+       -moz-transition: all 0.8s ease-in-out 0s;
+        -ms-transition: all 0.8s ease-in-out 0s;
+         -o-transition: all 0.8s ease-in-out 0s;
+            transition: all 0.8s ease-in-out 0s;
+}
+
+.copy {
+    position: relative;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.copy a {
+    color: #30bced;
 }

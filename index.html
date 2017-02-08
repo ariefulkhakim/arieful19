@@ -59,9 +59,7 @@
 						<li><a class="page-scroll" href="#home">Home</a></li>
 						<li><a class="page-scroll" href="#about">About</a></li>
 						<li><a class="page-scroll" href="#service">service</a></li>
-						<li><a class="page-scroll" href="#team">Team</a></li>
-						<li><a class="page-scroll" href="#blog">Blog</a></li>
-						<li><a class="page-scroll" href="#prince">Prince</a></li>
+						<li><a class="page-scroll" href="#portfolio">Portfolio</a></li>
 						<li><a class="page-scroll" href="#contact">Contact</a></li>
 					</ul>
 				</nav>
@@ -443,6 +441,60 @@
 	    </div>
 	</section> <!-- testimonial-end -->
 
+	<!-- contact -->
+	<section id="contact" class="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 heading">
+					<h2>Contact <span class="blue">us</span></h2>
+					<h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</h5>
+				</div>
+				<div class="col-md-6 contact-content">	
+					<form id="contact-form" method="post" enctype="multipart/form-data">
+						<div class="row">
+							<div class="form-group col-md-6">
+								<input type="text" name="name" class="form-control" placeholder="Name" required="required">
+							</div>
+							<div class="form-group col-md-6">
+								<input type="text" name="name" class="form-control" placeholder="Email" required="required">
+							</div>
+							<div class="form-group col-md-12">
+								<textarea rows="6" name="message" class="form-control" placeholder="Your Message" required="required"></textarea>
+							</div>
+							<div class="col-md-12 text-left">
+								<button type="submit" value="Send message" name="submit" id="submitButton" class="btn btn-send" title="Submit Your Message!">Send Message</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="col-md-6 contact-content">
+					<div id="map"></div>
+				</div>
+			</div>
+		</div>
+	</section> <!-- contact-end -->
+
+	<!-- footer -->
+	<footer id="footer" class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<ul class="footer-content">
+						<li><a href="#" class="footer-icon"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#" class="footer-icon"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#" class="footer-icon"><i class="fa fa-github"></i></a></li>
+						<li><a href="#" class="footer-icon"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="#" class="footer-icon"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="#" class="footer-icon"><i class="fa fa-google-plus"></i></a></li>
+					</ul>
+					<div class="copy">					
+						© 2017 Larry. All rights reserved by <a href="https://ariefulkhakim.github.io" target="blank">Arieful19</a> 
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
 	
 
 	<!-- ARIEFUL19 STYLE JAVASCRIPT -->
@@ -465,5 +517,23 @@
     <script src="js/main.js"></script>
     <!-- custom -->
     <script src="js/custom.js"></script>
+    <!-- google-map -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyXpQ9YIUhO9yArdTv7EaNLeSPvXb47pc&callback=initMap">
+    </script>
+
+    <script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 8,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
 </body>
 </html>
